@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.clong.youiao.weiget.YouiaoScrollView
+        android:id="@+id/drop_zoom_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imaga_head_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_head_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_search_move_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <View
+                        android:id="@+id/v_search_view_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tv_search_view_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@mipmap/ic_search"
+                        android:gravity="center"
+                        android:text="输入课程、机构"
+                        android:textColor="#707070"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="少儿英语  小主持人  少儿美术  舞蹈"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_content_bg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_content_bg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_content_bg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_content_bg" />
+        </LinearLayout>
+    </com.clong.youiao.weiget.YouiaoScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="泰州"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/header_progressbar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ani_refresh_loding"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="27°晴"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_search_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@mipmap/ic_search"
+                    android:gravity="center"
+                    android:text="输入课程、机构"
+                    android:textColor="#707070"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
